@@ -1,0 +1,52 @@
+Function sumOfDistinctElements(set1, set2):
+    mergedSet = mergeSets(set1, set2)
+    distinctSet = removeDuplicates(mergedSet)
+    result = calculateSum(distinctSet)
+    return result
+
+Function mergeSets(set1, set2):
+    mergedSet = concatenate(set1, set2)
+    return mergedSet
+
+Function removeDuplicates(set):
+    distinctSet = emptySet
+    for element in set:
+        if element not in distinctSet:
+            add element to distinctSet
+    return distinctSet
+
+Function calculateSum(set):
+    sum = 0
+    for element in set:
+        sum += element
+    return sum
+
+
+Procedure dot_product(v1, v2, ps):
+    ps = 0
+    for i from 1 to length(v1):
+        ps += v1[i] * v2[i]
+
+Algorithm checkOrthogonality(n, vectors):
+    for i from 1 to n:
+        read v1, v2 from vectors
+        dot_product(v1, v2, ps)
+        if ps = 0:
+            print "Vectors are orthogonal"
+        else:
+            print "Vectors are not orthogonal"
+
+Function dot_product(v1, v2):
+    ps = 0
+    for i from 1 to length(v1):
+        ps += v1[i] * v2[i]
+    return ps
+
+Algorithm checkOrthogonality(n, vectors):
+    for i from 1 to n:
+        read v1, v2 from vectors
+        ps = dot_product(v1, v2)
+        if ps = 0:
+            print "Vectors are orthogonal"
+        else:
+            print "Vectors are not orthogonal"
